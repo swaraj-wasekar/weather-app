@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Search" />
+        <button onclick="fun()">
+          <span class="material-icons">search</span>
+        </button>
+      </div>
+      <div class="weather">
+        <div class="city" id="city-name">Weather in Varanasi</div>
+        <div class="temp">19.05°C</div>
+        <img
+          src="http://openweathermap.org/img/wn/10d.png"
+          alt="image"
+          class="icon"
+        />
+        <div class="description">Cloudy</div>
+        <div class="humidity">Humidity : 20%</div>
+        <div class="wind">Wind speed : 6.2m/s</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
